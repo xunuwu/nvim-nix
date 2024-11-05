@@ -1,0 +1,3 @@
+{
+  plugins.hydra.enable = true;
+}
