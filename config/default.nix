@@ -3,11 +3,11 @@
   b = builtins;
 in {
   imports = let
-    shouldImport = n: _: !l.hasPrefix "_" n && l.hasSuffix ".nix" n;
+    shouldImport = n: t: t == "directory" || ((!l.hasPrefix "_" n) && l.hasSuffix ".nix" n);
     paths = dir:
       l.pipe dir [
         b.readDir
-        (b.filter shouldImport)
+        (l.filterAttrs shouldImport)
         (l.mapAttrsToList (relpath: type:
           if type != "directory"
           then [/${dir}/${relpath}]
