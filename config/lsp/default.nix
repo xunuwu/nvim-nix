@@ -51,10 +51,10 @@
           package = null;
         };
         lua_ls.enable = true;
-        luau_lsp = {
-          enable = true;
-          package = pkgs.callPackage ./_luau.nix {};
-        };
+        # luau_lsp = {
+        #   enable = true;
+        #   package = pkgs.callPackage ./_luau.nix {};
+        # };
         ts_ls.enable = true;
         zls.enable = true;
       };
