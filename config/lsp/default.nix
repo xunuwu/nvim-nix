@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{
   plugins = {
     lsp = {
       enable = true;
@@ -22,6 +22,10 @@
             action = "implementation";
             desc = "Implementation";
           };
+          "<leader>lI" = {
+            action = "incoming_calls";
+            desc = "Incoming calls";
+          };
           "<leader>lr" = {
             action = "rename";
             desc = "Rename";
@@ -33,6 +37,10 @@
           "<leader>la" = {
             action = "code_action";
             desc = "Run code action";
+          };
+          "<leader>lt" = {
+            action = "type_definition";
+            desc = "Go to type definition";
           };
         };
         extra = [
