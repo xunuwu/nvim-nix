@@ -32,6 +32,15 @@
         silent = true;
       };
     }
+    {
+      action = "<C-\\><C-n>C-w>";
+      key = "<esc><esc>";
+      mode = "t";
+      options = {
+        desc = "Exit terminal mode";
+        silent = true;
+      };
+    }
   ];
   colorscheme = "carbonfox";
   colorschemes = {
