@@ -15,6 +15,16 @@
       key = "<leader>sh";
       options.desc = "Search help";
     }
+    {
+      action.__raw = "function() MiniExtra.pickers.git_branches(nil, 'local') end";
+      key = "<leader>sb";
+      options.desc = "Switch git branch";
+    }
+    {
+      action.__raw = "MiniExtra.pickers.registers";
+      key = "<leader>sr";
+      options.desc = "Search registers";
+    }
   ];
   plugins.mini.modules.pick = {
     options.use_cache = true;

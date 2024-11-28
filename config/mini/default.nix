@@ -19,6 +19,7 @@
       align = {};
       pairs = {};
       git = {};
+      extra = {};
     };
   };
 }
