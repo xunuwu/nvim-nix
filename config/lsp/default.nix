@@ -65,6 +65,10 @@
         # };
         ts_ls.enable = true;
         zls.enable = true;
+        uiua = {
+          enable = true;
+          package = null;
+        };
       };
     };
 
