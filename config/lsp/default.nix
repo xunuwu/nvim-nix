@@ -75,8 +75,8 @@
     blink-cmp = {
       enable = true;
       settings = {
-        highlight.use_nvim_cmp_as_default = true;
-        window.documentation = {
+        appearance.use_nvim_cmp_as_default = true;
+        completion.documentation = {
           auto_show = true;
           auto_show_delay_ms = 250;
         };
@@ -95,10 +95,8 @@
 
           "<C-y>" = ["select_and_accept"];
         };
-        trigger = {
-          signature_help = {
-            enabled = true;
-          };
+        signature = {
+          enabled = true;
         };
       };
     };

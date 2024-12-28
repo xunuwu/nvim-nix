@@ -17,7 +17,7 @@
     l = pkgs.lib // builtins;
     nvim = nixvim.legacyPackages.${pkgs.system}.makeNixvimWithModule {
       extraSpecialArgs.mylib = let
-        nhelpers = nixvim.lib.${pkgs.system}.helpers;
+        nhelpers = nixvim.lib.nixvim;
         wrapFn = vars: attrs: let
           varsLua = l.mapAttrsToList (n: v: "local ${n} = ${v}") vars;
         in "function() ${l.concatStringsSep "\n" varsLua} return ${nhelpers.toLuaObject attrs} end";
