@@ -2,7 +2,6 @@
   clipboard.register = "unnamedplus"; # TODO remove and manually use system clipboard instead with <leader>{y,p}
   opts = {
     termguicolors = true;
-    ignorecase = true;
     number = true;
     relativenumber = true;
     signcolumn = "yes";
