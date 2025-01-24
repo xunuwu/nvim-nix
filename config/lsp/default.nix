@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   plugins = {
     lsp = {
       enable = true;
@@ -69,6 +69,7 @@
           enable = true;
           package = null;
         };
+        elixirls.enable = true;
       };
     };
 
