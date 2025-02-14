@@ -63,6 +63,7 @@
         #   enable = true;
         #   package = pkgs.callPackage ./_luau.nix {};
         # };
+        wgsl_analyzer.enable = true;
         ts_ls.enable = true;
         zls.enable = true;
         uiua = {
